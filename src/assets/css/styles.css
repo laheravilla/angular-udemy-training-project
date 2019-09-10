@@ -1,3 +1,6 @@
+/*******************************
+        Import custom fonts 
+********************************/
 @font-face{
     font-family: 'yanone';
     src: url('../fonts/yanone.ttf');
@@ -8,6 +11,17 @@
     src: url('../fonts/finger.ttf');
 }
 
+/*********************************
+        General styles
+*********************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'yanone';
+    font-family: 'yanone', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: url('../img/pattern.png');
+    position: fixed;
 }
