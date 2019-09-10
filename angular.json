@@ -21,10 +21,13 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/fonts/yanone.ttf",
+              "src/assets/fonts/finger.ttf",
+              "src/assets/fonts/titilium.ttf"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/styles.css"
             ],
             "scripts": []
           },
