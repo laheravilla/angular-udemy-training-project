@@ -1,8 +1,16 @@
-<h1>Angular Project</h1>
-<ul>
-  <li><a href="" [routerLink] = "['/about']">About</a></li>
-  <li><a href="" [routerLink] = "['/projects']">Projects</a></li>
-  <li><a href="" [routerLink] = "['/create-project']">Create Project</a></li>
-  <li><a href="" [routerLink] = "['/contact']">Contact</a></li>
-</ul>
-<router-outlet></router-outlet>
+<header>
+  <ul>
+    <li><a href="" [routerLink] = "['/about']">About</a></li>
+    <li><a href="" [routerLink] = "['/projects']">Projects</a></li>
+    <li class="logo"><a href="#">YLV</a></li>
+    <li><a href="" [routerLink] = "['/create-project']">Create Project</a></li>
+    <li><a href="" [routerLink] = "['/contact']">Contact</a></li>
+  </ul>
+</header>
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  Master in Javascript - Udemy &copy;
+</footer>

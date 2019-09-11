@@ -23,5 +23,72 @@ body {
     font-family: 'yanone', Arial, Helvetica, sans-serif;
     font-size: 20px;
     background: url('../img/pattern.png');
+    background-attachment: fixed;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/*********************************
+    Navigation Bar/ Header
+*********************************/
+header {
+    width: 100%;
+    height: 90px;
+    background: rgba(53, 103, 164, .8);
     position: fixed;
+    display: block;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    width: 60%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 90px
+}
+
+header ul li a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+header ul li a:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.logo {
+    font-family: 'finger';
+    font-size: 30px;
+}
+
+.logo {
+   transition: color 500ms, transform 500ms;
+}
+
+.logo:hover a {
+    background: transparent;
+    transform: scale(1.50, 1.50);
+}
+
+.logo a:hover {
+    color: black;
 }
