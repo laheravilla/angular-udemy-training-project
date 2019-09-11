@@ -71,7 +71,7 @@ header ul li a {
     -o-transition: all 300ms;
 }
 
-header ul li a:hover {
+header ul li a:hover, .actived {
     background-color: rgba(0, 0, 0, .8);
 }
 
