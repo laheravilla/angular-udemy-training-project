@@ -93,6 +93,7 @@ header ul li a:hover {
     color: black;
 }
 
+
 /*********************************
         Main Contebt
 *********************************/
@@ -106,4 +107,16 @@ header ul li a:hover {
     border-right: 1px solid #b7b7b7;
     background: rgba(255, 255, 255, .7);
     padding-top: 120px;
+}
+
+
+/*********************************
+            Footer
+*********************************/
+
+footer {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, .5);
 }
