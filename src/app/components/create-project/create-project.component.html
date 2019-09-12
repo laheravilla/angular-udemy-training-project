@@ -1,1 +1,31 @@
-<p>create-project works!</p>
+<div class="container">
+    <h2>{{title}}</h2>
+    <form #projectForm = "ngForm" (ngSubmit) = "onSubmit()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" #name="ngModel" [(ngModel)] = "project.name">
+        </div>
+         <div>
+            <label for="description">Description:</label>
+            <textarea name="description" cols="30" rows="5" #description="ngModel" [(ngModel)] = "project.description"></textarea>
+         </div>
+        <div>
+            <label for="category">Category:</label>
+            <input type="text" name="category" #category="ngModel" [(ngModel)] = "project.category">
+        </div>
+        <div>
+            <label for="year">Year:</label>
+            <input type="number" name="year" #year="ngModel" [(ngModel)] = "project.year">
+        </div>
+        <div>
+            <label for="technologies">Technologies:</label>
+            <input type="text" name="technologies" #technologies="ngModel" [(ngModel)] = "project.technologies">
+        </div>
+        <div>
+            <label for="image">Image:</label>
+            <input type="text" name="image" #image="ngModel" [(ngModel)] = "project.image">
+        </div>
+      
+        <input type="button" value="Submit">
+    </form>   
+</div>
