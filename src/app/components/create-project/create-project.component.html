@@ -3,15 +3,18 @@
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
         <div>
             <label for="name">Name:</label>
-            <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name">
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+            <small class="msg-alert" *ngIf="name.touched && !name.valid">*Name is mandatory</small>
         </div>
          <div>
             <label for="description">Description:</label>
-            <textarea name="description" cols="30" rows="5" #description="ngModel" [(ngModel)]="project.description"></textarea>
+            <textarea name="description" cols="30" rows="5" #description="ngModel" [(ngModel)]="project.description" required></textarea>
+            <small class="msg-alert" *ngIf="description.touched && !description.valid">*Description is mandatory</small>
          </div>
         <div>
             <label for="category">Category:</label>
-            <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category">
+            <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required>
+            <small class="msg-alert" *ngIf="category.touched && !category.valid">*Category is mandatory</small>
         </div>
         <div>
             <label for="year">Year:</label>
@@ -19,13 +22,14 @@
         </div>
         <div>
             <label for="technologies">Technologies:</label>
-            <input type="text" name="technologies" #technologies="ngModel" [(ngModel)]="project.technologies">
+            <input type="text" name="technologies" #technologies="ngModel" [(ngModel)]="project.technologies" required>
+            <small class="msg-alert" *ngIf="technologies.touched && !technologies.valid">*Technologies field is mandatory</small>
         </div>
         <div>
             <label for="image">Image:</label>
             <input type="file" name="image" placeholder="Upload image">
         </div>
       
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" [disabled]="!projectForm.form.valid">
     </form>   
 </div>
