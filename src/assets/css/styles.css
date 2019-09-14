@@ -95,7 +95,7 @@ header ul li a:hover, .actived {
 
 
 /*********************************
-        Main Contebt
+        Main Content
 *********************************/
 
 .content {
@@ -161,4 +161,59 @@ article.about {
 .about p {
     padding: 20px 0 30px 0;
     text-align: justify;
+}
+
+
+/*********************************
+        Create Project Page
+*********************************/
+
+.container{
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.container h2 {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 50%;
+}
+
+label {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"] {
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background:rgba(53, 103, 133, 1);
+    border: 1px solid rgba(13, 67 164, .8);
+    cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    color: rgba(53, 103, 133, 1);
+    background: white;
+    border: 1px solid rgba(53, 103, 133, 1)
 }
