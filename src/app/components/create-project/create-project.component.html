@@ -1,5 +1,7 @@
 <div class="container">
     <h2>{{title}}</h2>
+    <div class="msg success" *ngIf="status == 'success'">Project created successfully. You can check it <a href="#">here</a></div>
+    <div class="msg warning" *ngIf="status == 'failed'">Project failed! Try again</div>
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
         <div>
             <label for="name">Name:</label>

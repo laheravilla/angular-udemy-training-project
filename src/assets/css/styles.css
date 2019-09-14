@@ -228,3 +228,17 @@ form input[disabled] {
     padding: 3px;
     font-size: 13px;
 }
+
+.msg {
+    padding: 7px 0 7px 10px;
+    font-size: 13px;
+    color: white;
+}
+
+.success {
+    background-color:green;
+}
+
+.warning {
+    background-color:red;
+}
