@@ -29,7 +29,7 @@
         </div>
         <div>
             <label for="image">Image:</label>
-            <input type="file" name="image" placeholder="Upload image">
+            <input type="file" name="image" placeholder="Upload image" (change)="fileChangeEvent($event)">
         </div>
       
         <input type="submit" value="Submit" [disabled]="!projectForm.form.valid">
