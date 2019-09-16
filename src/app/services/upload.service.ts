@@ -12,7 +12,7 @@ export class UploadService
         this.url = global.url;
     }
 
-    makeFileRequest(url: string, params: Array<string>, files: Array<file>, name: string)
+    makeFileRequest(url: string, params: Array<string>, files: Array<File>, name: string)
     {
         return new Promise(function(resolve, reject) {
             let formData = new FormData();
