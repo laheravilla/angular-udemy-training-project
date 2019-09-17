@@ -13,6 +13,7 @@ import { global } from '../../services/global';
 export class CreateProjectComponent implements OnInit {
   public title: string;
   public project: Project;
+  public saveProject;
   public status: string;
   public filesToUpload: Array<File>;
 
@@ -28,19 +29,14 @@ export class CreateProjectComponent implements OnInit {
 
   onSubmit(form)
   {
-
-
     this._projectService.saveProject(this.project).subscribe(
       response => {
         if (response.project) {
-          this._uploadService.makeFileRequest(
-            global.url + "upload-image/" + response.project._id,
-            [],
-            this.filesToUpload,
-            'image'
-            )
+          this._uploadService.makeFileRequest(global.url + "upload-image/" + response.project._id, [], this.filesToUpload, 'image')
             .then((result:any) => {
-              console.log(response);
+
+              this.saveProject = result.project;
+
               this.status = 'success';
               form.reset(); // Empty form if success
           });

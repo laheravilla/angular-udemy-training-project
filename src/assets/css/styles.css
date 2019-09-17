@@ -99,7 +99,7 @@ header ul li a:hover, .actived {
 *********************************/
 
 .content {
-    min-height: 700px;
+    min-height: 780px;
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 0 40px black;
@@ -168,9 +168,22 @@ article.about {
         Create Project Page
 *********************************/
 
-.container{
+.container {
     padding: 20px;
     padding-top: 10px;
+}
+
+.container .image, .container .data {
+    float: left;
+    width: 47%;
+}
+
+.container .data {
+    margin-left: 30px;
+}
+
+.container .image img {
+    width: 90%;
 }
 
 .container h2 {
@@ -200,6 +213,7 @@ form textarea {
 }
 
 form button,
+a.btn,
 form input[type="submit"] {
     display: block;
     font-size: 17px;
@@ -209,6 +223,19 @@ form input[type="submit"] {
     background:rgba(53, 103, 133, 1);
     border: 1px solid rgba(13, 67 164, .8);
     cursor: pointer;
+}
+
+a.btn {
+    width: 35%;
+    text-decoration: none;
+}
+
+a.btn:hover {
+    opacity: .6;
+}
+
+.btn.btn-delete {
+    background-color: orange;
 }
 
 form button:hover,
@@ -267,3 +294,13 @@ form input[disabled] {
 .projects img {
     width: 100%;
 }
+
+.projects a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*********************************
+        Single Project Page
+*********************************/
