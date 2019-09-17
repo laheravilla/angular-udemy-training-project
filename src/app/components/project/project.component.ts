@@ -22,17 +22,33 @@ export class ProjectComponent implements OnInit {
     this.url = global.url;
   }
 
-  ngOnInit() {
+  ngOnInit()
+  {
     this._route.params.subscribe(params => {
       let id = params.id;
       this.getProject(id);
     });
   }
 
-  getProject(id) {
+  getProject(id)
+  {
     this._projectService.getProject(id).subscribe(
       response => {
         this.project = response.project;
+      },
+      error => {
+        console.log(<any>error);
+      }
+    );
+  }
+
+  deleteProject(id)
+  {
+    this._projectService.deleteProject(id).subscribe(
+      response => {
+        if (response.project) {
+          this._router.navigate(['/projects']);
+        }
       },
       error => {
         console.log(<any>error);
