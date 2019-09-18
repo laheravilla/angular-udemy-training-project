@@ -226,7 +226,7 @@ form input[type="submit"] {
 }
 
 a.btn {
-    width: 35%;
+    width: 40%;
     text-decoration: none;
 }
 
@@ -236,6 +236,14 @@ a.btn:hover {
 
 .btn.btn-delete {
     background-color: orange;
+}
+
+.btn.btn-cancel {
+    background-color: rgba(53, 103, 133, .6)
+}
+
+.btn.btn-delete-definitively {
+    background-color: red;
 }
 
 form button:hover,
@@ -276,11 +284,11 @@ form input[disabled] {
 *********************************/
 .projects {
     list-style: none;
-    display: block;
-    float: left;
+    display: flex;
+    justify-content: center;
     width: 25%;
     text-align: left;
-    margin: auto 20px;
+    margin: 15px;
 }
 
 .projects .image {
@@ -298,6 +306,22 @@ form input[disabled] {
 .projects a {
     text-decoration: none;
     color: black;
+}
+
+ul.all-projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+a.project {
+    display: flex;
+    flex-direction: column;
+}
+
+a.project h3 {
+    margin-top: 8px;
 }
 
 
