@@ -12,6 +12,7 @@ import { CreateProjectComponent } from './components/create-project/create-proje
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
     CreateProjectComponent,
     ContactComponent,
     ErrorPageComponent,
-    ProjectComponent
+    ProjectComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

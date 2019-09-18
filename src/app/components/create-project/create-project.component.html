@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="project">
     <h2>{{title}}</h2>
     <div class="msg success" *ngIf="status == 'success'">Project created successfully. You can check it <a [routerLink]="['/project', saveProject._id]">here</a></div>
     <div class="msg warning" *ngIf="status == 'failed'">Project failed! Try again</div>
@@ -29,6 +29,9 @@
         </div>
         <div>
             <label for="image">Image:</label>
+            <div *ngIf="project.image">
+                <img src="{{url + 'get-image/' + project.image}}" width="80"/>
+            </div>
             <input type="file" name="image" placeholder="Upload image" (change)="fileChangeEvent($event)">
         </div>
       
