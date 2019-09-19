@@ -1,7 +1,15 @@
 <section class="container">
-        <div class="gallery">
-                <div><img src="assets/img/coffee1.jpg" title="Funky roots"></div>
-                <div><img src="assets/img/coffee2.jpg" title="The long and winding road"></div>
-                <div><img src="assets/img/coffee3.jpg" title="Happy trees"></div>
-        </div>  
+        <h1>Contact</h1>   
+        Slider size:
+        <input type="number" [(ngModel)]="widthSlider">
+        <button (click)="loadSlider()">Load Slider</button>
+        <button (click)="resetSlider()">Reset Slider</button>
+
+        <div *ngIf="widthToSlider">
+                <slider [width]="widthToSlider"
+                        [sliderCaptions]="captions"
+                ></slider>   
+        </div>
 </section>
+
+

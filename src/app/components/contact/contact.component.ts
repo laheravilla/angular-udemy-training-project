@@ -7,15 +7,25 @@ declare var $:any; // Importar jQuery
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public widthSlider: number;
+  public widthToSlider: number | boolean;
+  public captions: boolean;
 
-  constructor() { }
-
-  ngOnInit() {
-    $('.gallery').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 800
-    });
+  constructor()
+  {
+    this.captions = false;
   }
 
+  ngOnInit() {}
+
+  loadSlider()
+  {
+    this.widthToSlider = null;
+    this.widthToSlider = this.widthSlider;
+  }
+
+  resetSlider()
+  {
+    this.widthToSlider = false;
+  }
 }

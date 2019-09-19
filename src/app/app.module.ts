@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { EditComponent } from './components/edit/edit.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EditComponent } from './components/edit/edit.component';
     ContactComponent,
     ErrorPageComponent,
     ProjectComponent,
-    EditComponent
+    EditComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
