@@ -8,8 +8,8 @@
         <div *ngIf="widthToSlider">
                 <slider [width]="widthToSlider"
                         [sliderCaptions]="captions"
+                        (getEventAuthor)="getAuthor($event)"
                 ></slider>   
         </div>
+        {{author.name + ' ' + author.email}}
 </section>
-
-

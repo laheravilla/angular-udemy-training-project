@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   public widthSlider: number;
   public widthToSlider: number | boolean;
   public captions: boolean;
+  public author: any;
 
   constructor()
   {
@@ -27,5 +28,11 @@ export class ContactComponent implements OnInit {
   resetSlider()
   {
     this.widthToSlider = false;
+  }
+
+  getAuthor(event)
+  {
+    console.log(event);
+    this.author = event;
   }
 }
