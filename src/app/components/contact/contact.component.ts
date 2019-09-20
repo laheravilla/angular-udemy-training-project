@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   public captions: boolean;
   public author: any;
   
-  @ViewChild('testViewChild') testViewChild;
+  @ViewChild('testViewChild', {static: true}) testViewChild;
 
   constructor()
   {

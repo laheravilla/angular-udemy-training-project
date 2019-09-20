@@ -14,6 +14,7 @@ import { ProjectComponent } from './components/project/project.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { EditComponent } from './components/edit/edit.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { HighligthDirective } from './highligth.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SliderComponent } from './components/slider/slider.component';
     ErrorPageComponent,
     ProjectComponent,
     EditComponent,
-    SliderComponent
+    SliderComponent,
+    HighligthDirective
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
         <h1>Contact</h1>   
 
         <div id="test" #testViewChild> <!--Angular considera los divs como plantillas-->
-                <p>This is the contact page. Feel free to write us!</p>
+                <p appHighligth>This is the contact page. Feel free to write us!</p>
         </div>
         
 
@@ -17,5 +17,5 @@
                         (getEventAuthor)="getAuthor($event)"
                 ></slider>   
         </div>
-        {{author.name + ' ' + author.email}}
+        <!--<pre>{{ author.name + ' ' + author.email }}</pre>-->
 </section>
