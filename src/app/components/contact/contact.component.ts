@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 declare var $:any; // Importar jQuery
 
 @Component({
@@ -11,13 +11,19 @@ export class ContactComponent implements OnInit {
   public widthToSlider: number | boolean;
   public captions: boolean;
   public author: any;
+  
+  @ViewChild('testViewChild') testViewChild;
 
   constructor()
   {
     this.captions = false;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // Opcion clasica de como acceder al DOM en Angular
+    var classicalOption = document.getElementById('test').innerHTML;
+    console.log(this.testViewChild.nativeElement.textContent);
+  }
 
   loadSlider()
   {

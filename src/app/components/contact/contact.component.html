@@ -1,5 +1,11 @@
 <section class="container">
         <h1>Contact</h1>   
+
+        <div id="test" #testViewChild> <!--Angular considera los divs como plantillas-->
+                <p>This is the contact page. Feel free to write us!</p>
+        </div>
+        
+
         Slider size:
         <input type="number" [(ngModel)]="widthSlider">
         <button (click)="loadSlider()">Load Slider</button>
