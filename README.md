@@ -22,6 +22,25 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Update Node.js before updating Angular
+
+Verify node.js version `$ node --version`
+
+Download and Install LTS version on https://nodejs.org/en/
+
+Uninstall Angular `$ npm uninstall -g @angular/cli`
+
+Verify if cache exists `$ npm cache verify`
+
+Clear cache `$ npm cache clean --force`
+
+Install last Angular version `$ npm install -g @angular/cli@latest`
+
+Verify angular version `$ angular --version`
+
+Create Angular project in any directory `$ ng new project-name`
+
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
