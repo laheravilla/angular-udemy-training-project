@@ -36,10 +36,13 @@ Clear cache `$ npm cache clean --force`
 
 Install last Angular version `$ npm install -g @angular/cli@latest`
 
-Verify angular version `$ angular --version`
-
 Create Angular project in any directory `$ ng new project-name`
 
+## Update npm
+
+Update npm `$ npm install -g npm@latest`
+
+Verify npm version `$ npm --version`
 
 ## Further help
 
