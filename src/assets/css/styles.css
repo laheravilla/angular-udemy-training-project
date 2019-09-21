@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: 'yanone', Arial, Helvetica, sans-serif;
+    font-family: 'yanone', Arial, Helvetica, sans-serif!important;
     font-size: 20px;
     background: url('../img/pattern.png');
     background-attachment: fixed;
@@ -29,6 +29,10 @@ body {
 .clearfix {
     float: none;
     clear: both;
+}
+
+a {
+    text-decoration: none!important;
 }
 
 /*********************************
