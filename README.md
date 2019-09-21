@@ -44,6 +44,16 @@ Update npm `$ npm install -g npm@latest`
 
 Verify npm version `$ npm --version`
 
+## Update Angular
+
+`$ npm install @angular/cli@latest`
+
+`$ ng update @angular/cli`
+
+`$ ng update`
+
+`$ ng update --all` or `$ ng update --all --force`
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
@@ -52,8 +62,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `$ ng g directive directive-name`
 
 ## Install dependencies
+Last version: `$ npm install --save dependency_name` and add paths on `angular.json`
+
+Specified version: `$ npm install --save dependency_name@1.0.1`
+
+Bootstrap
+`$ npm install --save bootstrap` and add script and css path on `angular.json`
+
 jQuery
 `$ npm install --save jquery`
 
 BxSlider
 `$ npm install bxslider --save`
+
+## Uninstall dependencies
+`$ npm uninstall --save dependency_name`
